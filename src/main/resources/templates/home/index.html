@@ -5,71 +5,48 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
 <title>Projeto Academy</title>
-<meta name="author" content="Rui Felipe"/>
-<link rel="stylesheet" href="css/style.css"/>
-<script src="https://kit.fontwesome.com/006642858d.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&family=Ubuntu&family=Work+Sans&display=swap" rel="stylesheet">
+<meta name="author" content="Rui Felipe" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+<link
+	href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&family=Ubuntu&family=Work+Sans&display=swap"
+	rel="stylesheet">
 </head>
 <body>
 
-	<header>
-	
-		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4527A0">
-		
-			<a class="navbar-brand" href="#"> 
-				<img src="img/logo.webp" width="200px">
-			</a>
-			
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobile">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			
-			<div id="navMobile" class="navbar-collapse collapse justify-content-end">
-				<a class="nav-item nav-link"> Home</a>
-				<a class="nav-item nav-link"> Cadastrar Aluno</a>
-				<a class="nav-item nav-link"> Pesquisar Aluno</a>
-				<a class="nav-item nav-link btn-danger"> Sair</a>
-			</div>
-		
-		</nav>
-	
-	</header>
-	
-	<section class="neo-section" style="background-image: url('img/fundo.png');">
-		
+	<div th:replace="fragmentos/fragmentos :: cabecalho"></div>
+
+	<section class="neo-section"
+		style="background-image: url('img/fundo.png');">
+
 		<div class="sombra"></div>
-		
+
 		<div class="center neo-container">
-			<h1 class="texto-centro"> Sistema de gerenciamento de alunos </h1>
-		
-			
+			<h1 class="texto-centro">Sistema de gerenciamento de alunos</h1>
+
+
 			<div class="botoes">
-				
-				<div class="wm">				
-					<h5 class="btn"> CADASTRAR ALUNO </h5>
+
+				<div class="wm">
+					<h5 class="btn">CADASTRAR ALUNO</h5>
 				</div>
-				
-				<div class="wm">				
-					<h5 class="btn justify-content-center"> ENCONTRAR ALUNO </h5>
+
+				<div class="wm">
+					<h5 class="btn justify-content-center">ENCONTRAR ALUNO</h5>
 				</div>
-				
+
 				<div class="clear"></div>
-				
+
 			</div>
-		
+
 		</div>
-		
+
 	</section>
 	
-	<footer>
-		<div class="rodape">
-			<span> Todos os Direitos Reservados - 2023 &copy; Rui Felipe</span>
-		</div>
-	</footer>
-	
-	
+	<div th:replace="fragmentos/fragmentos :: rodape"></div>
+
 	<script src="/webjars/jquery/3.6.3/jquery.min.js"></script>
 	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
-		
+
 </body>
 </html>

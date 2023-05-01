@@ -1,18 +1,27 @@
 @charset "ISO-8859-1";
-*{
+
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-nav{
+
+nav {
 	height: 150px;
 	color: #ffffff;
+	text-transform: uppercase;
 }
-a{
+
+a {
 	cursor: pointer;
 	font-weight: bold;
 }
-.neo-section{
+
+a.btn-nav:hover{
+	color: #BA68C8;
+}
+
+.neo-section {
 	min-height: 700px;
 	background-size: cover !important;
 	background-position: center;
@@ -21,42 +30,50 @@ a{
 	padding: 30px;
 	position: relative;
 }
-.wm{
+
+.wm {
 	width: 50%;
 	float: left;
 }
-.clear{
+
+.clear {
 	clear: both;
 }
-.center{
+
+.center {
 	text-align: center;
 }
-.neo-container{
+
+.neo-container {
 	max-width: 1280px;
 	padding: 2% 2%;
 	margin: 0 auto;
 	margin-top: 200px;
 }
-.sombra{
+
+.sombra {
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
 	position: absolute;
-	background: rgb(0,0,0,0.7);
-	z-index:100;
+	background: rgb(0, 0, 0, 0.7);
+	z-index: 100;
 }
-.neo-section > .neo-container{
+
+.neo-section>.neo-container {
 	position: relative;
 	z-index: 105;
 }
-.texto-centro{
+
+.texto-centro {
 	color: #fff;
 	font-size: 3em;
 	font-family: 'Ubuntu';
 	font-weight: bold;
 }
-.btn{
+
+.btn {
 	width: 280px;
 	color: #fff;
 	border-radius: 10px;
@@ -64,17 +81,33 @@ a{
 	padding: 20px;
 	font-weight: bold;
 }
-.botoes{
+
+.botoes {
 	padding: 2% 15%;
 }
-.btn:hover{
+
+.btn:hover {
 	color: #CE93D8;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 }
-.rodape{
+
+.rodape {
 	color: #fff;
 	background-color: #4527A0;
 	text-align: center;
-	font-size: 1.25em; 
+	font-size: 1.25em;
 	padding: 15px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 667px) {
+	.wm{
+		width: 100%;
+	}
+	nav{
+		height: 100%;
+	}
+	.neo-content{
+		margin-top: 120px;
+	}
 }
